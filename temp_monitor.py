@@ -25,10 +25,12 @@ def add_reading(monitor, temp):
     Agrega una nueva lectura con la temperatura especificada.
     Retorna el diccionario modificado.
     """
+
     lecturas = monitor ['readings']
     if len(lecturas) < monitor ['max']:
         lecturas.append(temp)
         monitor ['total'] += temp
+    return monitor
     # TODO: Implementar
     pass
 
