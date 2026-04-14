@@ -21,7 +21,6 @@ def main():
             monitor = temp_monitor.add_reading(monitor, temp)
     # TODO: Imprimir la racha creciente mas larga
     #       usando temp_monitor.longest_rising_streak()
-    print("Racha mas creciente mas larga: ", )
     print("Racha creciente mas larga:", temp_monitor.longest_rising_streak(monitor))
     pass
 
