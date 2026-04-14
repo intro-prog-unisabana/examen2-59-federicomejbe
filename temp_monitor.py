@@ -84,8 +84,8 @@ def coldest_window(monitor, k):
     """
     Retorna el promedio mas bajo de cualquier k lecturas consecutivas.
     """
-    for k in range (3):
-        prom = sum(monitor ['readings'][k:k+3]) // 3
+    for k in range (k, len(monitor ['readings'])+1):
+        prom = sum(monitor ['readings'][k:k+k]) // k
         return min(prom)
     
     # TODO: Implementar
