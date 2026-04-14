@@ -48,7 +48,9 @@ def average_temp(monitor):
     """
     Retorna la temperatura promedio de todas las lecturas.
     """
-    return sum(monitor['total']) / len(monitor['readings']) 
+    
+    total = float(monitor['total'])
+    return total / len(monitor['readings']) 
 
     # TODO: Implementar
     pass
